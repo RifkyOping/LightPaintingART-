@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Light Painting Art</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <img class="bg" src="gambarART2.jpeg">
+    <img class="bg2" src="gambarART1.jpeg">
+     
+  </div>
+  <button onclick="lihat()">Change</button>
+  <script>
+function lihat() {
+    const img = document.querySelector('.bg');
+    if (img.style.display === 'none' || img.style.display === '') {
+        img.style.display = 'block'; // Tampilkan gambar
+    } else {
+        img.style.display = 'none'; // Sembunyikan gambar
+    }
+}
+  </script>
+</body>
+</html>
